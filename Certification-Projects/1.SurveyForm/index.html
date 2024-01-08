@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+  <header>
+    <h1 id="title">Web developer Survey Form </h1>
+  <p id="description"> Please fill out this form with the required information</p>
+  </header>
+
+  <form class="survey-form" id="survey-form" method="post" >
+
+    <fieldset class="personal-information">
+      <label id="name-label" for="name">Name<input type="text" id="name" name="nameInput" placeholder="Enter your Name" required></label>
+      <label id="email-label" for="email">Email<input type="email" id="email" name="emailInput" placeholder="Enter your Email" required></label>
+      <label id="number-label" for="number">Age (optional)<input type="number" id="number" name="numberInput" min="16" max="120" placeholder="Enter your Age" ></label>
+      </fieldset> 
+
+      <fieldset>
+        <label for="dropdown">What area would you like to work in?
+    <select id="dropdown" name="dropdown-preference" required>
+      <option value="">(Select one)</option>
+      <option value="1">Front End</option>
+      <option value="2">Back End</option>
+      <option value="3">Full Stack</option>
+    </select>
+    </label>
+  </fieldset> 
+
+  <fieldset >
+    <legend>Do you have work experience in Web Developent?</legend>
+    <label for="experience-no">
+      <input class="inline" id="experience-no" type="radio" value="no-exp" name="experience" checked>No, this would be my first job</label>
+    <label for="experience-yes">
+      <input class="inline" id="experience-yes" type="radio" name="experience" value="yes-exp">Yes, I alredy had other jobs</label>
+  </fieldset>
+    
+    <fieldset>
+      <legend>Which of the following languages ​​do you have experience with?</legend>
+      <label><input class="inline" type="checkbox" value="Java">Java</label>
+      <label><input class="inline" type="checkbox"value = "JavaScript">JavaScript</label>
+      <label><input class="inline" type="checkbox" value="NodeJS">NodeJS</label>
+      <label><input class="inline" type="checkbox" value="phyton">Phyton</label>
+      <label><input class="inline" type="checkbox" value="React">React</label>
+      <label><input class="inline" type="checkbox" value="Angular">Angular</label>
+    </fieldset>
+
+    <fieldset>
+    <label>We want to know you better!
+    <textarea id="interest" placeholder="Write about your interest, hobbies..."rows="5" cols="30"></textarea>
+  </label>
+  </fieldset>
+
+    <input id="submit" type="submit" value="submit">
+  </form>
+</div>
+<body>
+
+</html>
